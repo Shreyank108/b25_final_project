@@ -1,4 +1,5 @@
-var timer = document.querySelector("#timer h1")
+function everything(){ 
+    var timer = document.querySelector("#timer h1")
 var timerButton = document.querySelector("#timer button")
 
 var audio=new Audio("./african-savanna.mp3")
@@ -45,5 +46,13 @@ timerButton.addEventListener("click",function(){
     gsap.to("#circo",{
         opacity:1,
     })
+    gsap.to("#nav",{ 
+        transform:"translateY(0px)"
+    })
+    gsap.to("body",{ 
+        overflow:"visible",
+    })
    
 })
+}
+everything();

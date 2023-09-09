@@ -13,7 +13,42 @@ body {
     height: 100%;
     width: 100%;
 }
-
+body{ 
+    overflow: hidden;
+    
+}
+#nav{ 
+    width: 100vw;
+    position: fixed; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding: 15px 30px;
+    /* background-color: blue; */
+    transform: translateY(-100px);
+}
+#nav svg{ 
+    fill: white;
+    height: 2vw;
+}
+#nav_other img{
+    position: absolute;
+    height: 90px; 
+    top: -95%;
+    left: -160%;
+    mix-blend-mode: difference;
+}
+#img_container{ 
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    background: url(./bg-texture.webp);
+}
+#flag1{ 
+    width: 1.7vw;
+}
 #page1{
     height: 100vh;
     width: 100%;
@@ -21,6 +56,15 @@ body {
     background-image: url(https://join.ames-foundation.com/images/bg-texture.webp);
     border-radius: 5px;
     position: relative;
+}
+#nav_other{ 
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    font-family: Montserrat;
 }
 
 #texture{
@@ -161,4 +205,56 @@ body {
 #circo h3{ 
     font-size: 35px;
     font-weight: 200;
+}
+#page2{ 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#up{ 
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./bg-texture.webp);
+     background-position: center;
+     background-size: cover;
+}
+#down{ 
+    width: 100vw;
+    height: 50vh;
+}
+#vid{ 
+    position: absolute; 
+    width: 95vw;
+    height: 95vh;
+    top: 15%;
+    left: 2%;
+
+}
+#vid video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page2_text{ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    margin-left: 50px;
+    font-weight: 200;
+
+}
+#cir{
+    
+     width: 50px;
+     height: 50px; 
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+     color: black;
+     background-color: white;
+     font-family: nabi;
 }
